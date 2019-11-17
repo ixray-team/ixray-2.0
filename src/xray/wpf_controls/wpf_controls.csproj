@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1351B0D6-E811-43F6-B57D-08655826DE18}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>xray.editor.wpf_controls</RootNamespace>
+    <AssemblyName>wpf_controls</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\binaries\Win32\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="color_ramp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="property_grid_editors\Boolean_editor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="property_grid_editors\collection_editor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="property_grid_editors\combo_box_editor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="property_grid_editors\default_editor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="property_grid_editors\external_editor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="property_grid_editors\Int32_editor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="property_grid_editors\many_editor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="property_grid_editors\string_select_file_editor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="property_grid_editors\Single_editor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="property_grid_editors\String_editor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="property_grid.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="property_grid_item_editors\color_range_editor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="property_grid_item_editors\common_item_editor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bool_to_int_converter.cs" />
+    <Compile Include="bool_to_visibility_converter.cs" />
+    <Compile Include="category_group_description.cs" />
+    <Compile Include="color_ramp.xaml.cs">
+      <DependentUpon>color_ramp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="converters\number_to_double_converter.cs" />
+    <Compile Include="property_grid_assignable_type_editor.cs" />
+    <Compile Include="property_grid_attribute_editor.cs" />
+    <Compile Include="property_grid_editor.cs" />
+    <Compile Include="property_grid_editors\Boolean_editor.xaml.cs">
+      <DependentUpon>Boolean_editor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="property_grid_editors\collection_editor.xaml.cs">
+      <DependentUpon>collection_editor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="property_grid_editors\combo_box_editor.xaml.cs">
+      <DependentUpon>combo_box_editor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="property_grid_editors\default_editor.xaml.cs">
+      <DependentUpon>default_editor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="property_grid_editors\external_editor.xaml.cs">
+      <DependentUpon>external_editor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="property_grid_editors\Int32_editor.xaml.cs">
+      <DependentUpon>Int32_editor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="property_grid_editors\many_editor.xaml.cs">
+      <DependentUpon>many_editor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="property_grid_editors\string_select_file_editor.xaml.cs">
+      <DependentUpon>string_select_file_editor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="property_grid_editors\Single_editor.xaml.cs">
+      <DependentUpon>Single_editor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="property_grid_editors\String_editor.xaml.cs">
+      <DependentUpon>String_editor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="property_grid_editor_selector.cs" />
+    <Compile Include="property_grid_editor_selector_extracter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="property_grid_empty_collection_checher.cs" />
+    <Compile Include="property_grid_item_editors\color_range_editor.xaml.cs">
+      <DependentUpon>color_range_editor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="property_grid_item_editors\common_item_editor.xaml.cs">
+      <DependentUpon>common_item_editor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="property_grid_item_editor_selector.cs" />
+    <Compile Include="property_grid_item_editor_selector_extracter.cs" />
+    <Compile Include="property_grid_item_property_descriptor.cs" />
+    <Compile Include="property_grid_property.cs" />
+    <Compile Include="property_grid.xaml.cs">
+      <DependentUpon>property_grid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="property_grid_host.cs">
+    </Compile>
+    <Compile Include="property_grid_host.Designer.cs">
+      <DependentUpon>property_grid_host.cs</DependentUpon>
+    </Compile>
+    <Compile Include="property_grid_value_changed_event_args.cs" />
+    <Compile Include="property_grid_value_changed_event_handler.cs" />
+    <Compile Include="property_grid_type_editor.cs" />
+    <Compile Include="special_attribute.cs" />
+    <Compile Include="value_range_and_format_attribute.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="property_grid_host.resx">
+      <DependentUpon>property_grid_host.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\PropertyGrid\PropertyGrid.csproj">
+      <Project>{45DA3FF9-E510-48E6-BC23-8A38BADAAC76}</Project>
+      <Name>PropertyGrid</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

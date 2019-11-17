@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "engine_pc", "engine_pc.vcproj", "{AC5DD91F-CE10-4E05-B48A-E1DDEC5CCD9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug(static)|Win32 = Debug(static)|Win32
+		Debug|Win32 = Debug|Win32
+		Master Gold|Win32 = Master Gold|Win32
+		Release(static)|Win32 = Release(static)|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC5DD91F-CE10-4E05-B48A-E1DDEC5CCD9C}.Debug(static)|Win32.ActiveCfg = Debug(static)|Win32
+		{AC5DD91F-CE10-4E05-B48A-E1DDEC5CCD9C}.Debug(static)|Win32.Build.0 = Debug(static)|Win32
+		{AC5DD91F-CE10-4E05-B48A-E1DDEC5CCD9C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AC5DD91F-CE10-4E05-B48A-E1DDEC5CCD9C}.Debug|Win32.Build.0 = Debug|Win32
+		{AC5DD91F-CE10-4E05-B48A-E1DDEC5CCD9C}.Master Gold|Win32.ActiveCfg = Master Gold|Win32
+		{AC5DD91F-CE10-4E05-B48A-E1DDEC5CCD9C}.Master Gold|Win32.Build.0 = Master Gold|Win32
+		{AC5DD91F-CE10-4E05-B48A-E1DDEC5CCD9C}.Release(static)|Win32.ActiveCfg = Release(static)|Win32
+		{AC5DD91F-CE10-4E05-B48A-E1DDEC5CCD9C}.Release(static)|Win32.Build.0 = Release(static)|Win32
+		{AC5DD91F-CE10-4E05-B48A-E1DDEC5CCD9C}.Release|Win32.ActiveCfg = Release|Win32
+		{AC5DD91F-CE10-4E05-B48A-E1DDEC5CCD9C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

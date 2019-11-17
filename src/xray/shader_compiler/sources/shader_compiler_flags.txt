@@ -1,0 +1,30 @@
+
+
+-ext="ps,vs,gs,...": list shader extensions when compile folder
+
+-show_define_names
+
+-debug_mode: use debug compile mode
+
+-asm: show asm code // cleared asm code
+-full_asm: show asm code // full asm code with comments
+
+(-objects: create object files)
+
+-instruction_number: show number of instructions
+
+-textures: output textures information. 
+-samplers: ...samplers
+-constants: ...constants
+
+-show_includes:
+
+-dx10
+-dx11
+
+-smXY: shader model ( -sm40 )
+
+-recurse: (compile subfolders)
+
+-time: time of compilation
+-size: show shader size
