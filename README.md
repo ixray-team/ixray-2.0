@@ -1,6 +1,6 @@
 # X-Ray
 
-Original *X-Ray* game engine source codes
+Original *X-Ray* 2.0 game engine source codes
 
 ## License
 
