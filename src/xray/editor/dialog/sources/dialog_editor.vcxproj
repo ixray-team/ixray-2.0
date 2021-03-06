@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5EC58FB8-223B-4991-9074-AB7739DD7773}</ProjectGuid>
+    <RootNamespace>dialog_editor</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)../binaries/$(Platform)/intermediates/$(Configuration)/$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)../binaries/$(Platform)/intermediates/$(Configuration)/$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)../binaries/$(Platform)/intermediates/$(Configuration)/$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)../binaries/$(Platform)/intermediates/$(Configuration)/$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)../binaries/$(Platform)/intermediates/$(Configuration)/$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)../binaries/$(Platform)/intermediates/$(Configuration)/$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)../binaries/$(Platform)/intermediates/$(Configuration)/$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)../binaries/$(Platform)/intermediates/$(Configuration)/$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <AdditionalIncludeDirectories>$(SolutionDir)/stlport;$(SolutionDir);../../../../SDK/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling />
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(SolutionDir)../binaries/$(Platform)/xray_$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)../binaries/$(Platform)/libraries/;$(SolutionDir)cs/libraries/$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <EmbedManagedResourceFile>$(TargetDir)intermediates\$(Configuration)\editor_base\editor_base.resources.resources;%(EmbedManagedResourceFile)</EmbedManagedResourceFile>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <SupportUnloadOfDelayLoadedDLL>true</SupportUnloadOfDelayLoadedDLL>
+      <ImportLibrary>$(SolutionDir)../binaries/$(Platform)/libraries/$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <CLRThreadAttribute>STAThreadingAttribute</CLRThreadAttribute>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)/stlport;$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <ExceptionHandling />
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(SolutionDir)../binaries/$(Platform)/xray_$(ProjectName)-debug.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)../binaries/$(Platform)/libraries/;$(SolutionDir)cs/libraries/$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <EmbedManagedResourceFile>$(TargetDir)intermediates\$(Configuration)\editor_base\editor_base.resources.resources;%(EmbedManagedResourceFile)</EmbedManagedResourceFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <ProgramDatabaseFile>$(SolutionDir)../binaries/$(Platform)/$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(TargetDir)$(TargetName).map</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <SupportUnloadOfDelayLoadedDLL>true</SupportUnloadOfDelayLoadedDLL>
+      <ImportLibrary>$(SolutionDir)../binaries/$(Platform)/libraries/$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <CLRThreadAttribute>STAThreadingAttribute</CLRThreadAttribute>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <AdditionalIncludeDirectories>$(SolutionDir)/stlport;$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling />
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(SolutionDir)../binaries/$(Platform)/xray_$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)../binaries/$(Platform)/libraries/;$(SolutionDir)cs/libraries/$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)/stlport;$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <ExceptionHandling />
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(SolutionDir)../binaries/$(Platform)/xray_$(ProjectName)-debug.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)../binaries/$(Platform)/libraries/;$(SolutionDir)cs/libraries/$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\base\sources\editor_base.vcxproj">
+      <Project>{d48cbbff-8b47-4e0f-915b-3220f3bc2402}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\controls\sources\editor_controls.vcxproj">
+      <Project>{fddfc8ad-1e92-4a92-8937-152c64c5b980}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="{1351B0D6-E811-43F6-B57D-08655826DE18}">
+      <Project>{1351b0d6-e811-43f6-b57d-08655826de18}</Project>
+      <IncludeIsGuid>true</IncludeIsGuid>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="{AC5DD91F-CE10-4E05-B48A-E1DDEC5CCD9C}">
+      <Project>{ac5dd91f-ce10-4e05-b48a-e1ddec5ccd9c}</Project>
+      <IncludeIsGuid>true</IncludeIsGuid>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="add_language_form.cpp" />
+    <ClCompile Include="command_add_delete_group.cpp" />
+    <ClCompile Include="command_add_delete_links.cpp" />
+    <ClCompile Include="command_change_node_properties.cpp" />
+    <ClCompile Include="command_change_node_string_table.cpp" />
+    <ClCompile Include="command_move_nodes.cpp" />
+    <ClCompile Include="dialog.cpp" />
+    <ClCompile Include="dialogs_manager.cpp" />
+    <ClCompile Include="dialog_action.cpp" />
+    <ClCompile Include="dialog_control_panel.cpp" />
+    <ClCompile Include="dialog_cooker.cpp" />
+    <ClCompile Include="dialog_document.cpp" />
+    <ClCompile Include="dialog_document_node_factory.cpp" />
+    <ClCompile Include="dialog_editor.cpp" />
+    <ClCompile Include="dialog_editor_components.cpp" />
+    <ClCompile Include="dialog_editor_entry_point.cpp" />
+    <ClCompile Include="dialog_editor_library_linkage.cpp" />
+    <ClCompile Include="dialog_editor_resources_cooker.cpp" />
+    <ClCompile Include="dialog_export_form.cpp" />
+    <ClCompile Include="dialog_expression.cpp" />
+    <ClCompile Include="dialog_files_source.cpp" />
+    <ClCompile Include="dialog_files_view_panel.cpp" />
+    <ClCompile Include="dialog_graph_link.cpp" />
+    <ClCompile Include="dialog_graph_node.cpp" />
+    <ClCompile Include="dialog_graph_node_layout.cpp" />
+    <ClCompile Include="dialog_graph_node_style.cpp" />
+    <ClCompile Include="dialog_hypergraph.cpp" />
+    <ClCompile Include="dialog_import_form.cpp" />
+    <ClCompile Include="dialog_item_properties_panel.cpp" />
+    <ClCompile Include="dialog_language_panel.cpp" />
+    <ClCompile Include="dialog_link.cpp" />
+    <ClCompile Include="dialog_links_manager.cpp" />
+    <ClCompile Include="dialog_link_action.cpp" />
+    <ClCompile Include="dialog_link_precondition.cpp" />
+    <ClCompile Include="dialog_node_base.cpp" />
+    <ClCompile Include="dialog_node_connection_editor.cpp" />
+    <ClCompile Include="dialog_node_hypergraph.cpp" />
+    <ClCompile Include="dialog_node_visitors.cpp" />
+    <ClCompile Include="dialog_operation.cpp" />
+    <ClCompile Include="dialog_operation_and.cpp" />
+    <ClCompile Include="dialog_operation_not.cpp" />
+    <ClCompile Include="dialog_operation_or.cpp" />
+    <ClCompile Include="dialog_phrase.cpp" />
+    <ClCompile Include="dialog_precondition.cpp" />
+    <ClCompile Include="dialog_precondition_action_editor.cpp" />
+    <ClCompile Include="dialog_text_editor.cpp" />
+    <ClCompile Include="dialog_text_editor_sorter.cpp" />
+    <ClCompile Include="editor_creator.cpp" />
+    <ClCompile Include="excel_file.cpp" />
+    <ClCompile Include="game_dialog.cpp" />
+    <ClCompile Include="game_dialog_cooker.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="remove_language_form.cpp" />
+    <ClCompile Include="string_table_id.cpp" />
+    <ClCompile Include="string_table_ids_storage.cpp" />
+    <ClCompile Include="string_table_id_options.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\api.h" />
+    <ClInclude Include="..\engine.h" />
+    <ClInclude Include="..\library_linkage.h" />
+    <ClInclude Include="add_language_form.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="command_add_delete_group.h" />
+    <ClInclude Include="command_add_delete_links.h" />
+    <ClInclude Include="command_change_node_properties.h" />
+    <ClInclude Include="command_change_node_string_table.h" />
+    <ClInclude Include="command_move_nodes.h" />
+    <ClInclude Include="dialog.h" />
+    <ClInclude Include="dialogs_manager.h" />
+    <ClInclude Include="dialog_action.h" />
+    <ClInclude Include="dialog_control_panel.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="dialog_cooker.h" />
+    <ClInclude Include="dialog_document.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="dialog_editor.h" />
+    <ClInclude Include="dialog_editor_memory.h" />
+    <ClInclude Include="dialog_editor_resources_cooker.h" />
+    <ClInclude Include="dialog_export_form.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="dialog_expression.h" />
+    <ClInclude Include="dialog_files_source.h" />
+    <ClInclude Include="dialog_files_view_panel.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="dialog_graph_link.h" />
+    <ClInclude Include="dialog_graph_node.h" />
+    <ClInclude Include="dialog_graph_node_layout.h" />
+    <ClInclude Include="dialog_graph_node_style.h" />
+    <ClInclude Include="dialog_hypergraph.h" />
+    <ClInclude Include="dialog_import_form.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="dialog_item_properties_panel.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="dialog_language_panel.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="dialog_link.h" />
+    <ClInclude Include="dialog_links_manager.h" />
+    <ClInclude Include="dialog_link_action.h" />
+    <ClInclude Include="dialog_link_precondition.h" />
+    <ClInclude Include="dialog_node_base.h" />
+    <ClInclude Include="dialog_node_connection_editor.h" />
+    <ClInclude Include="dialog_node_hypergraph.h" />
+    <ClInclude Include="dialog_node_visitors.h" />
+    <ClInclude Include="dialog_operation.h" />
+    <ClInclude Include="dialog_operation_and.h" />
+    <ClInclude Include="dialog_operation_not.h" />
+    <ClInclude Include="dialog_operation_or.h" />
+    <ClInclude Include="dialog_phrase.h" />
+    <ClInclude Include="dialog_precondition.h" />
+    <ClInclude Include="dialog_precondition_action_editor.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="dialog_text_editor.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="dialog_text_editor_sorter.h" />
+    <ClInclude Include="editor_creator.h" />
+    <ClInclude Include="excel_file.h" />
+    <ClInclude Include="game_dialog.h" />
+    <ClInclude Include="game_dialog_cooker.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="remove_language_form.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="string_table_id.h" />
+    <ClInclude Include="string_table_ids_storage.h" />
+    <ClInclude Include="string_table_id_options.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="add_language_form.resx">
+      <DependentUpon>add_language_form.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialog_control_panel.resx">
+      <DependentUpon>dialog_control_panel.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialog_document.resx">
+      <DependentUpon>dialog_document.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialog_export_form.resx">
+      <DependentUpon>dialog_export_form.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialog_files_view_panel.resx">
+      <DependentUpon>dialog_files_view_panel.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialog_import_form.resx">
+      <DependentUpon>dialog_import_form.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialog_language_panel.resx">
+      <DependentUpon>dialog_language_panel.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialog_precondition_action_editor.resx">
+      <DependentUpon>dialog_precondition_action_editor.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialog_text_editor.resx">
+      <DependentUpon>dialog_text_editor.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="remove_language_form.resx">
+      <DependentUpon>remove_language_form.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

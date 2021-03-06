@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="application">
+      <UniqueIdentifier>{22d3b9c1-23e0-4384-a172-35a1493c425f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\compiler">
+      <UniqueIdentifier>{c896b74a-6bd6-4534-b999-718d506800ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\compiler\define_manager">
+      <UniqueIdentifier>{7f52664c-0342-4dfd-ba21-709bc62f1180}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\compiler\file_batcher">
+      <UniqueIdentifier>{41a01285-dd34-47c0-9a4b-692c4b83904f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\compiler\resource_parser">
+      <UniqueIdentifier>{abe49a40-e3b7-485b-a008-e818060894fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\compiler\compiler">
+      <UniqueIdentifier>{8159d8ca-2999-4f77-ac68-b250a1e11456}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\compiler\utility">
+      <UniqueIdentifier>{e349c2f1-6d7c-4387-be36-d8397115a006}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{06889074-be61-4d6a-b86b-b06a1a7c9fff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{e7a79b2f-7e78-4b10-80eb-dad743bbd4ba}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="shader_compiler_application.cpp">
+      <Filter>application</Filter>
+    </ClCompile>
+    <ClCompile Include="shader_compiler_entry_point.cpp">
+      <Filter>application</Filter>
+    </ClCompile>
+    <ClCompile Include="define_manager.cpp">
+      <Filter>application\compiler\define_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="file_batcher.cpp">
+      <Filter>application\compiler\file_batcher</Filter>
+    </ClCompile>
+    <ClCompile Include="resource_parser.cpp">
+      <Filter>application\compiler\resource_parser</Filter>
+    </ClCompile>
+    <ClCompile Include="shader_compiler.cpp">
+      <Filter>application\compiler\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="utility_functions.cpp">
+      <Filter>application\compiler\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="math_error.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="shader_compiler_library_linkage.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="shader_compiler_application.h">
+      <Filter>application</Filter>
+    </ClInclude>
+    <ClInclude Include="define_manager.h">
+      <Filter>application\compiler\define_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="file_batcher.h">
+      <Filter>application\compiler\file_batcher</Filter>
+    </ClInclude>
+    <ClInclude Include="resource_parser.h">
+      <Filter>application\compiler\resource_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="shader_compiler.h">
+      <Filter>application\compiler\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="utility_functions.h">
+      <Filter>application\compiler\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="shader_compiler_memory.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="shader_compiler_resources.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="shader_compiler.ico">
+      <Filter>resources</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="shader_compiler.rc">
+      <Filter>resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="shader_compiler_flags.txt" />
+  </ItemGroup>
+</Project>

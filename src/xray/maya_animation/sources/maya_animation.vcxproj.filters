@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{af6d2250-3f03-430d-b466-0489e53ce68d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{9d8fdde0-e6ee-4c77-9255-12e7b80c64c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="world">
+      <UniqueIdentifier>{420d565d-3f8c-466f-b4df-60d63ecf112c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sisl">
+      <UniqueIdentifier>{c15e149d-6ab3-44c7-9caf-285b617c9193}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sisl\include">
+      <UniqueIdentifier>{ca4ce13a-ce1a-4b47-8cbd-0e96a7863915}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="track">
+      <UniqueIdentifier>{f13f67bb-4168-4ccb-84fe-6bc8cf1636f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test_animation">
+      <UniqueIdentifier>{7aabeb77-50ad-4380-aa14-0f8e8ab0a292}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="maya_animation_library_linkage.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="maya_animation_world.cpp">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="raw_bi_spline.cpp">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\construct.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\destruct.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\makecvkreg.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s1219.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s1220.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s1221.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s1227.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s1350.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s1351.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s1353.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s1700.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s1701.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s1706.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s1710.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s1712.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s1940.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s1941.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s1942.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s1943.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s1944.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s1945.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s1946.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s1947.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s1948.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s1949.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s1950.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s1951.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s1961.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s6chpar.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s6dist.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s6err.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s6existbox.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s6knotmult.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s6length.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s6lufacp.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s6lusolp.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s6newbox.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\s6ratder.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\sh1922.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\sh1927.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\sh1929.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\sh6getlist.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\sh6getothr.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\sh6getprev.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="sisl\sh6ismain.cpp">
+      <Filter>sisl</Filter>
+    </ClCompile>
+    <ClCompile Include="test_track.cpp">
+      <Filter>track</Filter>
+    </ClCompile>
+    <ClCompile Include="anim_track_discrete.cpp">
+      <Filter>test_animation</Filter>
+    </ClCompile>
+    <ClCompile Include="anim_track_hermite.cpp">
+      <Filter>test_animation</Filter>
+    </ClCompile>
+    <ClCompile Include="maya_animation_data.cpp">
+      <Filter>test_animation</Filter>
+    </ClCompile>
+    <ClCompile Include="anim_track.cpp" />
+    <ClCompile Include="anim_track_discrete_channels.cpp" />
+    <ClCompile Include="anim_track_eval.cpp" />
+    <ClCompile Include="anim_track_io.cpp" />
+    <ClCompile Include="animation_data.cpp" />
+    <ClCompile Include="discrete_data.cpp" />
+    <ClCompile Include="maya_animation_entry_point.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="maya_animation_memory.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\data_header.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\discrete_data.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\engine.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\library_linkage.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\raw_bi_spline.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="maya_animation_world.h">
+      <Filter>world</Filter>
+    </ClInclude>
+    <ClInclude Include="sisl\sisl.h">
+      <Filter>sisl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="sisl\sislP.h">
+      <Filter>sisl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="test_track.h">
+      <Filter>track</Filter>
+    </ClInclude>
+    <ClInclude Include="anim_track_discrete.h">
+      <Filter>test_animation</Filter>
+    </ClInclude>
+    <ClInclude Include="anim_track_hermite.h">
+      <Filter>test_animation</Filter>
+    </ClInclude>
+    <ClInclude Include="maya_animation_data.h">
+      <Filter>test_animation</Filter>
+    </ClInclude>
+    <ClInclude Include="anim_track.h" />
+    <ClInclude Include="anim_track_discrete_channels.h" />
+    <ClInclude Include="anim_track_discrete_channels_inline.h" />
+    <ClInclude Include="animation_data.h" />
+    <ClInclude Include="animation_data_inline.h" />
+  </ItemGroup>
+</Project>

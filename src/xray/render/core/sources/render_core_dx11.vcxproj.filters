@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{209d50e4-1ba6-4a85-aa08-214f8a613c70}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="backend.cpp" />
+    <ClCompile Include="backend_handlers.cpp" />
+    <ClCompile Include="dds.cpp" />
+    <ClCompile Include="decl_utils.cpp" />
+    <ClCompile Include="device.cpp" />
+    <ClCompile Include="device_caps.cpp" />
+    <ClCompile Include="effect_compiler.cpp" />
+    <ClCompile Include="effect_descriptor.cpp" />
+    <ClCompile Include="effect_manager.cpp" />
+    <ClCompile Include="index_stream.cpp" />
+    <ClCompile Include="pix_event_wrapper.cpp" />
+    <ClCompile Include="res_buffer.cpp" />
+    <ClCompile Include="res_constant_buffer.cpp" />
+    <ClCompile Include="res_constant_table.cpp" />
+    <ClCompile Include="res_declaration.cpp" />
+    <ClCompile Include="res_effect.cpp" />
+    <ClCompile Include="res_geometry.cpp" />
+    <ClCompile Include="res_gs_hw.cpp" />
+    <ClCompile Include="res_input_layout.cpp" />
+    <ClCompile Include="res_ps_hw.cpp" />
+    <ClCompile Include="res_rt.cpp" />
+    <ClCompile Include="res_sampler_list.cpp" />
+    <ClCompile Include="res_sampler_state.cpp" />
+    <ClCompile Include="res_signature.cpp" />
+    <ClCompile Include="res_state.cpp" />
+    <ClCompile Include="res_texture.cpp" />
+    <ClCompile Include="res_texture_list.cpp" />
+    <ClCompile Include="res_vs_hw.cpp" />
+    <ClCompile Include="res_xs.cpp" />
+    <ClCompile Include="resource_manager.cpp" />
+    <ClCompile Include="sampler_slot.cpp" />
+    <ClCompile Include="sampler_state_descriptor.cpp" />
+    <ClCompile Include="state_cache.cpp" />
+    <ClCompile Include="state_descriptor.cpp" />
+    <ClCompile Include="state_utils.cpp" />
+    <ClCompile Include="texture_pool.cpp" />
+    <ClCompile Include="texture_storage.cpp" />
+    <ClCompile Include="utils.cpp" />
+    <ClCompile Include="vertex_stream.cpp" />
+    <ClCompile Include="xs_descriptor.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend.h" />
+    <ClInclude Include="..\backend_handlers.h" />
+    <ClInclude Include="..\backend_handlers_inline.h" />
+    <ClInclude Include="..\backend_inline.h" />
+    <ClInclude Include="..\blender_defines.h" />
+    <ClInclude Include="com_utils.h" />
+    <ClInclude Include="..\constant.h" />
+    <ClInclude Include="..\constant_bindings.h" />
+    <ClInclude Include="..\constant_defines.h" />
+    <ClInclude Include="..\constant_inline.h" />
+    <ClInclude Include="..\d3d_defines.h" />
+    <ClInclude Include="dds.h" />
+    <ClInclude Include="..\decl_utils.h" />
+    <ClInclude Include="..\device.h" />
+    <ClInclude Include="..\device_caps.h" />
+    <ClInclude Include="..\device_inline.h" />
+    <ClInclude Include="dx10_defines.h" />
+    <ClInclude Include="dx11_defines.h" />
+    <ClInclude Include="..\effect_compiler.h" />
+    <ClInclude Include="..\effect_descriptor.h" />
+    <ClInclude Include="..\effect_manager.h" />
+    <ClInclude Include="..\effect_manager_inline.h" />
+    <ClInclude Include="float4x4b.h" />
+    <ClInclude Include="..\index_stream.h" />
+    <ClInclude Include="manager_common_inline.h" />
+    <ClInclude Include="..\pix_event_wrapper.h" />
+    <ClInclude Include="quasi_singleton.h" />
+    <ClInclude Include="..\render_include.h" />
+    <ClInclude Include="..\render_options.h" />
+    <ClInclude Include="..\res_buffer.h" />
+    <ClInclude Include="..\res_buffer_inline.h" />
+    <ClInclude Include="..\res_common.h" />
+    <ClInclude Include="..\res_common_inline.h" />
+    <ClInclude Include="..\res_constant_buffer.h" />
+    <ClInclude Include="..\res_constant_buffer_inline.h" />
+    <ClInclude Include="..\res_constant_table.h" />
+    <ClInclude Include="..\res_declaration.h" />
+    <ClInclude Include="..\res_effect.h" />
+    <ClInclude Include="..\res_geometry.h" />
+    <ClInclude Include="..\res_gs_hw.h" />
+    <ClInclude Include="..\res_input_layout.h" />
+    <ClInclude Include="..\res_ps_hw.h" />
+    <ClInclude Include="..\res_rt.h" />
+    <ClInclude Include="..\res_sampler_list.h" />
+    <ClInclude Include="..\res_sampler_state.h" />
+    <ClInclude Include="..\res_signature.h" />
+    <ClInclude Include="..\res_state.h" />
+    <ClInclude Include="..\res_texture.h" />
+    <ClInclude Include="..\res_texture_list.h" />
+    <ClInclude Include="..\res_vs_hw.h" />
+    <ClInclude Include="..\res_xs.h" />
+    <ClInclude Include="..\res_xs_hw.h" />
+    <ClInclude Include="..\res_xs_hw_impl.h" />
+    <ClInclude Include="..\resource_manager.h" />
+    <ClInclude Include="..\resource_manager_inline.h" />
+    <ClInclude Include="..\sampler_slot.h" />
+    <ClInclude Include="..\sampler_state_descriptor.h" />
+    <ClInclude Include="..\sampler_state_descriptor_inline.h" />
+    <ClInclude Include="..\shader_cache.h" />
+    <ClInclude Include="..\shader_defines.h" />
+    <ClInclude Include="..\sorted_vector.h" />
+    <ClInclude Include="..\sorted_vector_inline.h" />
+    <ClInclude Include="..\state_cache.h" />
+    <ClInclude Include="..\state_cache_inline.h" />
+    <ClInclude Include="..\state_descriptor.h" />
+    <ClInclude Include="..\state_utils.h" />
+    <ClInclude Include="texture_pool.h" />
+    <ClInclude Include="texture_storage.h" />
+    <ClInclude Include="..\utils.h" />
+    <ClInclude Include="..\utils_inline.h" />
+    <ClInclude Include="..\vertex_stream.h" />
+    <ClInclude Include="..\xs_data.h" />
+    <ClInclude Include="..\xs_descriptor.h" />
+  </ItemGroup>
+</Project>

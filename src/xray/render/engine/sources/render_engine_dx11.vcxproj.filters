@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{bfda75f7-0bf7-47b9-bca4-d7883cf17dbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="effects">
+      <UniqueIdentifier>{a99eeda1-95b1-4113-b706-2ba1592f6dfc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="effect_combine.cpp">
+      <Filter>effects</Filter>
+    </ClCompile>
+    <ClCompile Include="effect_deffer.cpp">
+      <Filter>effects</Filter>
+    </ClCompile>
+    <ClCompile Include="effect_deffer_aref.cpp">
+      <Filter>effects</Filter>
+    </ClCompile>
+    <ClCompile Include="effect_deffer_base.cpp">
+      <Filter>effects</Filter>
+    </ClCompile>
+    <ClCompile Include="effect_deffer_materials.cpp">
+      <Filter>effects</Filter>
+    </ClCompile>
+    <ClCompile Include="effect_forward_system.cpp">
+      <Filter>effects</Filter>
+    </ClCompile>
+    <ClCompile Include="effect_light_direct.cpp">
+      <Filter>effects</Filter>
+    </ClCompile>
+    <ClCompile Include="effect_light_mask.cpp">
+      <Filter>effects</Filter>
+    </ClCompile>
+    <ClCompile Include="effect_light_spot.cpp">
+      <Filter>effects</Filter>
+    </ClCompile>
+    <ClCompile Include="effect_notexture.cpp">
+      <Filter>effects</Filter>
+    </ClCompile>
+    <ClCompile Include="effect_system_colored.cpp">
+      <Filter>effects</Filter>
+    </ClCompile>
+    <ClCompile Include="effect_system_line.cpp">
+      <Filter>effects</Filter>
+    </ClCompile>
+    <ClCompile Include="effect_system_ui.cpp">
+      <Filter>effects</Filter>
+    </ClCompile>
+    <ClCompile Include="effect_terrain.cpp">
+      <Filter>effects</Filter>
+    </ClCompile>
+    <ClCompile Include="effect_terrain_new.cpp">
+      <Filter>effects</Filter>
+    </ClCompile>
+    <ClCompile Include="effect_tree.cpp">
+      <Filter>effects</Filter>
+    </ClCompile>
+    <ClCompile Include="convex_volume.cpp" />
+    <ClCompile Include="environment.cpp" />
+    <ClCompile Include="light.cpp" />
+    <ClCompile Include="lights_db.cpp" />
+    <ClCompile Include="material_manager.cpp" />
+    <ClCompile Include="model_manager.cpp" />
+    <ClCompile Include="scene_context.cpp" />
+    <ClCompile Include="scene_render.cpp" />
+    <ClCompile Include="scene_render_effects.cpp" />
+    <ClCompile Include="stage.cpp" />
+    <ClCompile Include="stage_combine.cpp" />
+    <ClCompile Include="stage_gbuffer.cpp" />
+    <ClCompile Include="stage_lights.cpp" />
+    <ClCompile Include="stage_pre_lighting.cpp" />
+    <ClCompile Include="stage_screen_image.cpp" />
+    <ClCompile Include="stage_skybox.cpp" />
+    <ClCompile Include="stage_sun.cpp" />
+    <ClCompile Include="stage_sun_materials.cpp" />
+    <ClCompile Include="stage_texture_mip_clamp_test.cpp" />
+    <ClCompile Include="system_renderer.cpp" />
+    <ClCompile Include="terrain.cpp" />
+    <ClCompile Include="terrain_texture_pool.cpp" />
+    <ClCompile Include="texture_cook.cpp" />
+    <ClCompile Include="visual.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\effect_combine.h">
+      <Filter>effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\effect_deffer.h">
+      <Filter>effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\effect_deffer_aref.h">
+      <Filter>effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\effect_deffer_base.h">
+      <Filter>effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\effect_deffer_materials.h">
+      <Filter>effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\effect_forward_system.h">
+      <Filter>effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\effect_light_direct.h">
+      <Filter>effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\effect_light_mask.h">
+      <Filter>effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\effect_light_spot.h">
+      <Filter>effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\effect_notexture.h">
+      <Filter>effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\effect_system_colored.h">
+      <Filter>effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\effect_system_line.h">
+      <Filter>effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\effect_system_ui.h">
+      <Filter>effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\effect_terrain.h">
+      <Filter>effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\effect_terrain_new.h">
+      <Filter>effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\effect_tree.h">
+      <Filter>effects</Filter>
+    </ClInclude>
+    <ClInclude Include="convex_volume.h" />
+    <ClInclude Include="du_sphere.h" />
+    <ClInclude Include="..\editor_visual.h" />
+    <ClInclude Include="..\environment.h" />
+    <ClInclude Include="..\light.h" />
+    <ClInclude Include="..\lights_db.h" />
+    <ClInclude Include="..\material_manager.h" />
+    <ClInclude Include="..\model_manager.h" />
+    <ClInclude Include="..\model_manager_inline.h" />
+    <ClInclude Include="..\namespace_wrapper.h" />
+    <ClInclude Include="..\render_queue.h" />
+    <ClInclude Include="..\scene_context.h" />
+    <ClInclude Include="..\scene_render.h" />
+    <ClInclude Include="..\shared_names.h" />
+    <ClInclude Include="..\stage.h" />
+    <ClInclude Include="..\stage_combine.h" />
+    <ClInclude Include="..\stage_gbuffer.h" />
+    <ClInclude Include="..\stage_lights.h" />
+    <ClInclude Include="..\stage_pre_lighting.h" />
+    <ClInclude Include="..\stage_screen_image.h" />
+    <ClInclude Include="..\stage_skybox.h" />
+    <ClInclude Include="..\stage_sun.h" />
+    <ClInclude Include="..\stage_sun_materials.h" />
+    <ClInclude Include="..\stage_texture_mip_clamp_test.h" />
+    <ClInclude Include="..\system_renderer.h" />
+    <ClInclude Include="..\terrain.h" />
+    <ClInclude Include="..\terrain_texture_pool.h" />
+    <ClInclude Include="..\terrain_texture_pool_inline.h" />
+    <ClInclude Include="texture_cook.h" />
+    <ClInclude Include="..\vertex_formats.h" />
+    <ClInclude Include="..\visual.h" />
+  </ItemGroup>
+</Project>

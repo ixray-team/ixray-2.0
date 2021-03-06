@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{0e8031b3-e81a-4de2-bbbf-8012ed2fbb62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{0a6a02e6-462e-42d5-b234-e7a67409c771}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="world">
+      <UniqueIdentifier>{091d3df0-c3a2-4ae2-92e2-41cca2983475}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="objects">
+      <UniqueIdentifier>{aeced62b-a226-4f2e-8e0f-4dd2613c10eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="objects\text_edit">
+      <UniqueIdentifier>{78b97df2-0f0f-4529-84f6-d593e9fe8161}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="objects\font">
+      <UniqueIdentifier>{004b7d87-4ac4-4204-9f9d-bf687225ef0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="objects\scroll_bar">
+      <UniqueIdentifier>{dd173801-6bf7-4230-bb44-a93a48b233d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="objects\scroll_view">
+      <UniqueIdentifier>{6df4118d-ee2f-4039-908d-a880bed2bc34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="objects\image">
+      <UniqueIdentifier>{8b746df3-eac2-44c1-804f-236109cb28c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="objects\text">
+      <UniqueIdentifier>{e179c24c-5308-4f3f-bd7f-a2e916d3b96f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="objects\dialog">
+      <UniqueIdentifier>{b5836282-13c9-4a55-bd92-afa5b4a258c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="objects\!base_window">
+      <UniqueIdentifier>{56223d45-ca1a-4c67-9698-87e46933dbc9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="ui_library_linkage.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="ui_world.cpp">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="ui_world_factory.cpp">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="ui_text_edit.cpp">
+      <Filter>objects\text_edit</Filter>
+    </ClCompile>
+    <ClCompile Include="ui_text_edit_action.cpp">
+      <Filter>objects\text_edit</Filter>
+    </ClCompile>
+    <ClCompile Include="ui_text_edit_initialize.cpp">
+      <Filter>objects\text_edit</Filter>
+    </ClCompile>
+    <ClCompile Include="ui_font.cpp">
+      <Filter>objects\font</Filter>
+    </ClCompile>
+    <ClCompile Include="ui_scroll_bar.cpp">
+      <Filter>objects\scroll_bar</Filter>
+    </ClCompile>
+    <ClCompile Include="ui_scroll_pad.cpp">
+      <Filter>objects\scroll_view</Filter>
+    </ClCompile>
+    <ClCompile Include="ui_scroll_view.cpp">
+      <Filter>objects\scroll_view</Filter>
+    </ClCompile>
+    <ClCompile Include="ui_image.cpp">
+      <Filter>objects\image</Filter>
+    </ClCompile>
+    <ClCompile Include="ui_text.cpp">
+      <Filter>objects\text</Filter>
+    </ClCompile>
+    <ClCompile Include="ui_dialog.cpp">
+      <Filter>objects\dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="ui_dialog_input_handler.cpp">
+      <Filter>objects\dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="ui_window.cpp">
+      <Filter>objects\!base_window</Filter>
+    </ClCompile>
+    <ClCompile Include="ui_entry_point.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_memory.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\engine.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\library_linkage.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_world.h">
+      <Filter>world</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_text_edit.h">
+      <Filter>objects\text_edit</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_text_edit_action.h">
+      <Filter>objects\text_edit</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_text_edit_defs.h">
+      <Filter>objects\text_edit</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_font.h">
+      <Filter>objects\font</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_scroll_bar.h">
+      <Filter>objects\scroll_bar</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_scroll_pad.h">
+      <Filter>objects\scroll_view</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_scroll_view.h">
+      <Filter>objects\scroll_view</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_image.h">
+      <Filter>objects\image</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_text.h">
+      <Filter>objects\text</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_dialog.h">
+      <Filter>objects\dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_window.h">
+      <Filter>objects\!base_window</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_window_inline.h">
+      <Filter>objects\!base_window</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

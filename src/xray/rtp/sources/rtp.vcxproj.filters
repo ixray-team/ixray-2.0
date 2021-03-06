@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{f4926d11-f72d-4a6a-949e-3caf23361ab3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="world">
+      <UniqueIdentifier>{b03590cd-fc7a-4b68-9ab1-c873c5beb489}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{f7abaa9e-7339-47ec-81c7-f06b42002eb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="action">
+      <UniqueIdentifier>{cf7cb489-3d40-40cf-b1fa-8ec10f2371cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="controller">
+      <UniqueIdentifier>{447e60f0-901e-450d-88b1-51d2387a4d8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="state">
+      <UniqueIdentifier>{38ac7175-d4f2-4402-b988-7b2ee21c51ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="state\space_params">
+      <UniqueIdentifier>{278f095e-1563-4880-aba7-3ef2b82bb7eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{14c98ddb-4e68-4801-9b77-8acd6ae5b26d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test\grasping">
+      <UniqueIdentifier>{42cf6b20-7ac7-4e69-8e74-936e824f3bcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test\navigation">
+      <UniqueIdentifier>{d5dfba06-7765-4c38-8960-f1970dbb46c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="value_function">
+      <UniqueIdentifier>{d5fe6f8c-0618-4059-aeda-91eac4ad6e9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="action_base">
+      <UniqueIdentifier>{b86bf899-c0c1-4c68-b304-e1fc0d9fe233}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_library_linkage.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_world.cpp">
+      <Filter>world</Filter>
+    </ClCompile>
+    <ClCompile Include="action.cpp">
+      <Filter>action</Filter>
+    </ClCompile>
+    <ClCompile Include="animation_action.cpp">
+      <Filter>action</Filter>
+    </ClCompile>
+    <ClCompile Include="controller.cpp">
+      <Filter>controller</Filter>
+    </ClCompile>
+    <ClCompile Include="state.cpp">
+      <Filter>state</Filter>
+    </ClCompile>
+    <ClCompile Include="space_params.cpp">
+      <Filter>state\space_params</Filter>
+    </ClCompile>
+    <ClCompile Include="animation_grasping_action.cpp">
+      <Filter>test\grasping</Filter>
+    </ClCompile>
+    <ClCompile Include="animation_grasping_controller.cpp">
+      <Filter>test\grasping</Filter>
+    </ClCompile>
+    <ClCompile Include="animation_grasping_params.cpp">
+      <Filter>test\grasping</Filter>
+    </ClCompile>
+    <ClCompile Include="grasping_space_params.cpp">
+      <Filter>test\grasping</Filter>
+    </ClCompile>
+    <ClCompile Include="test_grasping_action.cpp">
+      <Filter>test\grasping</Filter>
+    </ClCompile>
+    <ClCompile Include="test_grasping_controller.cpp">
+      <Filter>test\grasping</Filter>
+    </ClCompile>
+    <ClCompile Include="navigation_action.cpp">
+      <Filter>test\navigation</Filter>
+    </ClCompile>
+    <ClCompile Include="navigation_controller.cpp">
+      <Filter>test\navigation</Filter>
+    </ClCompile>
+    <ClCompile Include="navigation_params.cpp">
+      <Filter>test\navigation</Filter>
+    </ClCompile>
+    <ClCompile Include="regression_tree.cpp">
+      <Filter>value_function</Filter>
+    </ClCompile>
+    <ClCompile Include="training_regression_tree.cpp">
+      <Filter>value_function</Filter>
+    </ClCompile>
+    <ClCompile Include="training_set.cpp">
+      <Filter>value_function</Filter>
+    </ClCompile>
+    <ClCompile Include="training_value_function.cpp">
+      <Filter>value_function</Filter>
+    </ClCompile>
+    <ClCompile Include="value_function.cpp">
+      <Filter>value_function</Filter>
+    </ClCompile>
+    <ClCompile Include="action_base.cpp">
+      <Filter>action_base</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_entry_point.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="rtp_memory.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="rtp_world.h">
+      <Filter>world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\engine.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\library_linkage.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="action.h">
+      <Filter>action</Filter>
+    </ClInclude>
+    <ClInclude Include="action_inline.h">
+      <Filter>action</Filter>
+    </ClInclude>
+    <ClInclude Include="animation_action.h">
+      <Filter>action</Filter>
+    </ClInclude>
+    <ClInclude Include="animation_action_inline.h">
+      <Filter>action</Filter>
+    </ClInclude>
+    <ClInclude Include="animation_action_params.h">
+      <Filter>action</Filter>
+    </ClInclude>
+    <ClInclude Include="animation_controller.h">
+      <Filter>controller</Filter>
+    </ClInclude>
+    <ClInclude Include="animation_controller_inline.h">
+      <Filter>controller</Filter>
+    </ClInclude>
+    <ClInclude Include="base_controller.h">
+      <Filter>controller</Filter>
+    </ClInclude>
+    <ClInclude Include="controller.h">
+      <Filter>controller</Filter>
+    </ClInclude>
+    <ClInclude Include="controller_inline.h">
+      <Filter>controller</Filter>
+    </ClInclude>
+    <ClInclude Include="space_params.h">
+      <Filter>state\space_params</Filter>
+    </ClInclude>
+    <ClInclude Include="space_params_inline.h">
+      <Filter>state\space_params</Filter>
+    </ClInclude>
+    <ClInclude Include="state.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="animation_grasping_action.h">
+      <Filter>test\grasping</Filter>
+    </ClInclude>
+    <ClInclude Include="animation_grasping_controller.h">
+      <Filter>test\grasping</Filter>
+    </ClInclude>
+    <ClInclude Include="animation_grasping_params.h">
+      <Filter>test\grasping</Filter>
+    </ClInclude>
+    <ClInclude Include="animation_grasping_params_inline.h">
+      <Filter>test\grasping</Filter>
+    </ClInclude>
+    <ClInclude Include="grasping_space_params.h">
+      <Filter>test\grasping</Filter>
+    </ClInclude>
+    <ClInclude Include="test_grasping_action.h">
+      <Filter>test\grasping</Filter>
+    </ClInclude>
+    <ClInclude Include="test_grasping_controller.h">
+      <Filter>test\grasping</Filter>
+    </ClInclude>
+    <ClInclude Include="navigation_action.h">
+      <Filter>test\navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="navigation_controller.h">
+      <Filter>test\navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="navigation_params.h">
+      <Filter>test\navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="regression_tree.h">
+      <Filter>value_function</Filter>
+    </ClInclude>
+    <ClInclude Include="regression_tree_inline.h">
+      <Filter>value_function</Filter>
+    </ClInclude>
+    <ClInclude Include="training_regression_tree.h">
+      <Filter>value_function</Filter>
+    </ClInclude>
+    <ClInclude Include="training_regression_tree_inline.h">
+      <Filter>value_function</Filter>
+    </ClInclude>
+    <ClInclude Include="training_set.h">
+      <Filter>value_function</Filter>
+    </ClInclude>
+    <ClInclude Include="training_set_inline.h">
+      <Filter>value_function</Filter>
+    </ClInclude>
+    <ClInclude Include="training_value_function.h">
+      <Filter>value_function</Filter>
+    </ClInclude>
+    <ClInclude Include="training_value_function_inline.h">
+      <Filter>value_function</Filter>
+    </ClInclude>
+    <ClInclude Include="trajectory.h">
+      <Filter>value_function</Filter>
+    </ClInclude>
+    <ClInclude Include="trajectory_inline.h">
+      <Filter>value_function</Filter>
+    </ClInclude>
+    <ClInclude Include="value_function.h">
+      <Filter>value_function</Filter>
+    </ClInclude>
+    <ClInclude Include="value_function_inline.h">
+      <Filter>value_function</Filter>
+    </ClInclude>
+    <ClInclude Include="action_base.h">
+      <Filter>action_base</Filter>
+    </ClInclude>
+    <ClInclude Include="action_base_inline.h">
+      <Filter>action_base</Filter>
+    </ClInclude>
+    <ClInclude Include="iaction.h">
+      <Filter>action_base</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{81d6b15c-2412-4205-8385-621be118ed9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{cf62cac3-6bbc-433b-bdbb-099285802c42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="command_engine">
+      <UniqueIdentifier>{36538167-1f4f-49f1-a10b-0a02ae63160b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{9e6bb6fe-0dba-49c4-807f-acb34313d80d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources\images">
+      <UniqueIdentifier>{bdc67960-a7c3-4fae-af50-8a12ceef8abc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="editor_base_library_linkage.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="command_engine.cpp">
+      <Filter>command_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="command_transaction.cpp">
+      <Filter>command_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="editor_base_entry_point.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\converting.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\editor_base.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\editor_extensions.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\images_loading.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\library_linkage.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\managed_delegate.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\unmanaged_string.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\unmanaged_string_inline.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="command.h">
+      <Filter>command_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="command_engine.h">
+      <Filter>command_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="command_engine_inline.h">
+      <Filter>command_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="command_transaction.h">
+      <Filter>command_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\images\folder_icons.h">
+      <Filter>resources\images</Filter>
+    </ClInclude>
+    <ClInclude Include="..\images\images104x8.h">
+      <Filter>resources\images</Filter>
+    </ClInclude>
+    <ClInclude Include="..\images\images16x16.h">
+      <Filter>resources\images</Filter>
+    </ClInclude>
+    <ClInclude Include="..\images\images30x25.h">
+      <Filter>resources\images</Filter>
+    </ClInclude>
+    <ClInclude Include="..\images\images70x53.h">
+      <Filter>resources\images</Filter>
+    </ClInclude>
+    <ClInclude Include="..\images\images92x25.h">
+      <Filter>resources\images</Filter>
+    </ClInclude>
+    <ClInclude Include="..\images\images96x32.h">
+      <Filter>resources\images</Filter>
+    </ClInclude>
+    <ClInclude Include="..\images\images9x9.h">
+      <Filter>resources\images</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="resources.resx">
+      <Filter>resources</Filter>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\images\folder_icons16x16.png">
+      <Filter>resources\images</Filter>
+    </Image>
+    <Image Include="..\images\folder_icons32x32.png">
+      <Filter>resources\images</Filter>
+    </Image>
+    <Image Include="..\images\folder_icons64x64.png">
+      <Filter>resources\images</Filter>
+    </Image>
+    <Image Include="..\images\images104x8.png">
+      <Filter>resources\images</Filter>
+    </Image>
+    <Image Include="..\images\images16x16.png">
+      <Filter>resources\images</Filter>
+    </Image>
+    <Image Include="..\images\images30x25.png">
+      <Filter>resources\images</Filter>
+    </Image>
+    <Image Include="..\images\images70x53.png">
+      <Filter>resources\images</Filter>
+    </Image>
+    <Image Include="..\images\images92x25.png">
+      <Filter>resources\images</Filter>
+    </Image>
+    <Image Include="..\images\images96x32.png">
+      <Filter>resources\images</Filter>
+    </Image>
+    <Image Include="..\images\images9x9.png">
+      <Filter>resources\images</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

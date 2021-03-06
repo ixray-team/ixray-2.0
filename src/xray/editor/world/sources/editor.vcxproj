@@ -1,0 +1,1089 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F9523302-4516-4FEC-863B-01031632EC37}</ProjectGuid>
+    <RootNamespace>xray.editor</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)../binaries/$(Platform)/intermediates/$(Configuration)/$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)../binaries/$(Platform)/intermediates/$(Configuration)/$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)../binaries/$(Platform)/intermediates/$(Configuration)/$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)../binaries/$(Platform)/intermediates/$(Configuration)/$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)../binaries/$(Platform)/intermediates/$(Configuration)/$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)../binaries/$(Platform)/intermediates/$(Configuration)/$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)../binaries/$(Platform)/intermediates/$(Configuration)/$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)../binaries/$(Platform)/intermediates/$(Configuration)/$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)/stlport;$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling />
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4945;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/ignore:4248 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(SolutionDir)../binaries/$(Platform)/xray_$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)../binaries/$(Platform)/libraries/;$(SolutionDir)cs/libraries/$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <EmbedManagedResourceFile>$(TargetDir)intermediates\$(Configuration)\editor_base\editor_base.resources.resources;%(EmbedManagedResourceFile)</EmbedManagedResourceFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(SolutionDir)../binaries/$(Platform)/$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>false</GenerateMapFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <FixedBaseAddress>false</FixedBaseAddress>
+      <DataExecutionPrevention />
+      <SupportUnloadOfDelayLoadedDLL>true</SupportUnloadOfDelayLoadedDLL>
+      <ImportLibrary>$(SolutionDir)../binaries/$(Platform)/libraries/$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <CLRThreadAttribute>STAThreadingAttribute</CLRThreadAttribute>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)/stlport;$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling />
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4945;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/ignore:4248 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(SolutionDir)../binaries/$(Platform)/xray_$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)../binaries/$(Platform)/libraries/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(SolutionDir)../binaries/$(Platform)/$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>false</GenerateMapFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <FixedBaseAddress>false</FixedBaseAddress>
+      <DataExecutionPrevention />
+      <SupportUnloadOfDelayLoadedDLL>true</SupportUnloadOfDelayLoadedDLL>
+      <ImportLibrary>$(SolutionDir)../binaries/$(Platform)/libraries/$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+      <CLRThreadAttribute>STAThreadingAttribute</CLRThreadAttribute>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <CustomBuildStep>
+      <Command />
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)/stlport;$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling />
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4945;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ShowIncludes>false</ShowIncludes>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/ignore:4248 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(SolutionDir)../binaries/$(Platform)/xray_$(ProjectName)-debug.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)../binaries/$(Platform)/libraries/;$(SolutionDir)cs/libraries/$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <EmbedManagedResourceFile>$(TargetDir)intermediates\$(Configuration)\editor_base\editor_base.resources.resources;%(EmbedManagedResourceFile)</EmbedManagedResourceFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <ProgramDatabaseFile>$(SolutionDir)../binaries/$(Platform)/$(TargetName).pdb</ProgramDatabaseFile>
+      <MapFileName>$(TargetDir)$(TargetName).map</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <SupportUnloadOfDelayLoadedDLL>true</SupportUnloadOfDelayLoadedDLL>
+      <ImportLibrary>$(SolutionDir)../binaries/$(Platform)/libraries/$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <CLRThreadAttribute>STAThreadingAttribute</CLRThreadAttribute>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <CustomBuildStep>
+      <Command />
+    </CustomBuildStep>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)/stlport;$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4945;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ShowIncludes>false</ShowIncludes>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/ignore:4248 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(SolutionDir)../binaries/$(Platform)/xray_$(ProjectName)-debug.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)../binaries/$(Platform)/libraries/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <ProgramDatabaseFile>$(SolutionDir)../binaries/$(Platform)/$(TargetName).pdb</ProgramDatabaseFile>
+      <MapFileName>$(TargetDir)$(TargetName).map</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <SupportUnloadOfDelayLoadedDLL>true</SupportUnloadOfDelayLoadedDLL>
+      <ImportLibrary>$(SolutionDir)../binaries/$(Platform)/libraries/$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+      <CLRThreadAttribute>STAThreadingAttribute</CLRThreadAttribute>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Core">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Design">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\engine\pc\sources\engine_pc.vcxproj">
+      <Project>{ac5dd91f-ce10-4e05-b48a-e1ddec5ccd9c}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\wpf_controls\wpf_controls.csproj">
+      <Project>{1351b0d6-e811-43f6-b57d-08655826de18}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\base\sources\editor_base.vcxproj">
+      <Project>{d48cbbff-8b47-4e0f-915b-3220f3bc2402}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\controls\sources\editor_controls.vcxproj">
+      <Project>{fddfc8ad-1e92-4a92-8937-152c64c5b980}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\dialog\sources\dialog_editor.vcxproj">
+      <Project>{5ec58fb8-223b-4991-9074-ab7739dd7773}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="about_dialog.cpp" />
+    <ClCompile Include="actions.cpp" />
+    <ClCompile Include="action_engine.cpp" />
+    <ClCompile Include="add_delete_group_nodes.cpp" />
+    <ClCompile Include="add_delete_node.cpp" />
+    <ClCompile Include="attribute.cpp" />
+    <ClCompile Include="change_node_index.cpp" />
+    <ClCompile Include="collision_object.cpp" />
+    <ClCompile Include="collision_object_control.cpp" />
+    <ClCompile Include="collision_object_dynamic.cpp" />
+    <ClCompile Include="color_curve_editor.cpp" />
+    <ClCompile Include="command_add_library_object.cpp" />
+    <ClCompile Include="command_apply_control_transform.cpp" />
+    <ClCompile Include="command_create_remove_link.cpp" />
+    <ClCompile Include="command_delete_object.cpp" />
+    <ClCompile Include="command_drop_objects.cpp" />
+    <ClCompile Include="command_paste_objects.cpp" />
+    <ClCompile Include="command_place_objects.cpp" />
+    <ClCompile Include="command_select.cpp" />
+    <ClCompile Include="command_set_object_transform.cpp" />
+    <ClCompile Include="command_snap_base.cpp" />
+    <ClCompile Include="command_snap_objects.cpp" />
+    <ClCompile Include="compound_object_tab.cpp" />
+    <ClCompile Include="compound_tool_tab.cpp" />
+    <ClCompile Include="control_properties_tab.cpp" />
+    <ClCompile Include="dependency_editor.cpp" />
+    <ClCompile Include="dependency_editor_bool_bool.cpp" />
+    <ClCompile Include="dependency_editor_bool_float.cpp" />
+    <ClCompile Include="dependency_editor_float_bool.cpp" />
+    <ClCompile Include="dependency_editor_float_float.cpp" />
+    <ClCompile Include="disable_group_nodes.cpp" />
+    <ClCompile Include="editor_entry_point.cpp" />
+    <ClCompile Include="editor_library_linkage.cpp" />
+    <ClCompile Include="editor_resource_manager.cpp" />
+    <ClCompile Include="editor_world.cpp" />
+    <ClCompile Include="float_curve.cpp" />
+    <ClCompile Include="float_curve_editor.cpp" />
+    <ClCompile Include="float_curve_editor_draw.cpp" />
+    <ClCompile Include="flying_camera.cpp" />
+    <ClCompile Include="graph_view.cpp" />
+    <ClCompile Include="gui_binder.cpp" />
+    <ClCompile Include="inplace_combo_box.cpp">
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="input_actions.cpp" />
+    <ClCompile Include="input_engine.cpp" />
+    <ClCompile Include="input_keys_holder.cpp" />
+    <ClCompile Include="level_editor.cpp" />
+    <ClCompile Include="level_editor_actions.cpp" />
+    <ClCompile Include="library_object_tab.cpp" />
+    <ClCompile Include="light_tool_tab.cpp" />
+    <ClCompile Include="loading_dialog.cpp" />
+    <ClCompile Include="move_node.cpp" />
+    <ClCompile Include="object_base.cpp" />
+    <ClCompile Include="object_base_transform.cpp" />
+    <ClCompile Include="object_compound.cpp" />
+    <ClCompile Include="object_inspector_tab.cpp" />
+    <ClCompile Include="object_light.cpp" />
+    <ClCompile Include="object_properties.cpp" />
+    <ClCompile Include="object_solid_visual.cpp" />
+    <ClCompile Include="options_dialog.cpp" />
+    <ClCompile Include="options_page_general.cpp" />
+    <ClCompile Include="options_page_input.cpp" />
+    <ClCompile Include="particle_data_sources_holder.cpp" />
+    <ClCompile Include="particle_data_sources_panel.cpp" />
+    <ClCompile Include="particle_data_source_nodes.cpp" />
+    <ClCompile Include="particle_editor.cpp" />
+    <ClCompile Include="particle_graph_document.cpp" />
+    <ClCompile Include="particle_graph_node.cpp" />
+    <ClCompile Include="particle_graph_node_action.cpp" />
+    <ClCompile Include="particle_graph_node_collection.cpp" />
+    <ClCompile Include="particle_graph_node_emitter.cpp" />
+    <ClCompile Include="particle_graph_node_event.cpp" />
+    <ClCompile Include="particle_graph_node_property.cpp" />
+    <ClCompile Include="particle_graph_node_style.cpp" />
+    <ClCompile Include="particle_groups_source.cpp" />
+    <ClCompile Include="particle_hypergraph.cpp" />
+    <ClCompile Include="particle_links_manager.cpp" />
+    <ClCompile Include="particle_node_connection_editor.cpp" />
+    <ClCompile Include="particle_node_properties.cpp" />
+    <ClCompile Include="particle_node_property_holders.cpp" />
+    <ClCompile Include="particle_scalable_control.cpp" />
+    <ClCompile Include="particle_sources_panel.cpp" />
+    <ClCompile Include="particle_source_nodes_container.cpp" />
+    <ClCompile Include="particle_time_based_layout_panel.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="picker.cpp" />
+    <ClCompile Include="project.cpp" />
+    <ClCompile Include="project_browser_dialog.cpp" />
+    <ClCompile Include="project_items.cpp" />
+    <ClCompile Include="project_tab.cpp" />
+    <ClCompile Include="property_boolean.cpp" />
+    <ClCompile Include="property_boolean_reference.cpp" />
+    <ClCompile Include="property_boolean_values_value.cpp" />
+    <ClCompile Include="property_boolean_values_value_reference.cpp" />
+    <ClCompile Include="property_collection.cpp" />
+    <ClCompile Include="property_collection_base.cpp" />
+    <ClCompile Include="property_collection_converter.cpp" />
+    <ClCompile Include="property_collection_editor.cpp" />
+    <ClCompile Include="property_collection_enumerator.cpp" />
+    <ClCompile Include="property_collection_getter.cpp" />
+    <ClCompile Include="property_color.cpp" />
+    <ClCompile Include="property_color_base.cpp" />
+    <ClCompile Include="property_color_reference.cpp" />
+    <ClCompile Include="property_connection_editor.cpp" />
+    <ClCompile Include="property_container.cpp" />
+    <ClCompile Include="property_container_converter.cpp" />
+    <ClCompile Include="property_converter_boolean_values.cpp" />
+    <ClCompile Include="property_converter_color.cpp" />
+    <ClCompile Include="property_converter_float.cpp" />
+    <ClCompile Include="property_converter_float_enum.cpp" />
+    <ClCompile Include="property_converter_integer_enum.cpp" />
+    <ClCompile Include="property_converter_integer_values.cpp" />
+    <ClCompile Include="property_converter_string_values.cpp" />
+    <ClCompile Include="property_converter_tree_values.cpp" />
+    <ClCompile Include="property_converter_vec3f.cpp" />
+    <ClCompile Include="property_editor_color.cpp" />
+    <ClCompile Include="property_editor_file_name.cpp" />
+    <ClCompile Include="property_editor_tree_values.cpp" />
+    <ClCompile Include="property_file_name_value.cpp" />
+    <ClCompile Include="property_file_name_value_shared_str.cpp" />
+    <ClCompile Include="property_float.cpp" />
+    <ClCompile Include="property_float_enum_value.cpp" />
+    <ClCompile Include="property_float_enum_value_reference.cpp" />
+    <ClCompile Include="property_float_limited.cpp" />
+    <ClCompile Include="property_float_limited_reference.cpp" />
+    <ClCompile Include="property_float_reference.cpp" />
+    <ClCompile Include="property_holder.cpp" />
+    <ClCompile Include="property_holder_boolean.cpp" />
+    <ClCompile Include="property_holder_collection.cpp" />
+    <ClCompile Include="property_holder_color.cpp" />
+    <ClCompile Include="property_holder_container.cpp" />
+    <ClCompile Include="property_holder_float.cpp" />
+    <ClCompile Include="property_holder_integer.cpp" />
+    <ClCompile Include="property_holder_string.cpp" />
+    <ClCompile Include="property_holder_vec3f.cpp" />
+    <ClCompile Include="property_integer.cpp" />
+    <ClCompile Include="property_integer_enum_value.cpp" />
+    <ClCompile Include="property_integer_enum_value_reference.cpp" />
+    <ClCompile Include="property_integer_limited.cpp" />
+    <ClCompile Include="property_integer_limited_reference.cpp" />
+    <ClCompile Include="property_integer_reference.cpp" />
+    <ClCompile Include="property_integer_values_value.cpp" />
+    <ClCompile Include="property_integer_values_value_getter.cpp" />
+    <ClCompile Include="property_integer_values_value_reference.cpp" />
+    <ClCompile Include="property_integer_values_value_reference_getter.cpp" />
+    <ClCompile Include="property_property_container.cpp" />
+    <ClCompile Include="property_string.cpp" />
+    <ClCompile Include="property_string_shared_str.cpp" />
+    <ClCompile Include="property_string_values_value.cpp" />
+    <ClCompile Include="property_string_values_value_getter.cpp" />
+    <ClCompile Include="property_string_values_value_shared_str.cpp" />
+    <ClCompile Include="property_string_values_value_shared_str_getter.cpp" />
+    <ClCompile Include="property_vec3f.cpp" />
+    <ClCompile Include="property_vec3f_base.cpp" />
+    <ClCompile Include="property_vec3f_reference.cpp" />
+    <ClCompile Include="raw_file_property_struct.cpp" />
+    <ClCompile Include="resource_editor.cpp" />
+    <ClCompile Include="resource_editors_factory.cpp" />
+    <ClCompile Include="resource_editor_base.cpp" />
+    <ClCompile Include="resource_editor_cancel.cpp" />
+    <ClCompile Include="resource_editor_commit.cpp" />
+    <ClCompile Include="resource_selector.cpp" />
+    <ClCompile Include="scene_graph_node.cpp" />
+    <ClCompile Include="scene_graph_node_style.cpp" />
+    <ClCompile Include="scene_graph_tab.cpp" />
+    <ClCompile Include="solid_visual_tool_tab.cpp" />
+    <ClCompile Include="sound_editor.cpp" />
+    <ClCompile Include="sound_files_source.cpp" />
+    <ClCompile Include="sound_files_view_panel.cpp" />
+    <ClCompile Include="sound_file_item.cpp" />
+    <ClCompile Include="sound_file_item_dependency.cpp" />
+    <ClCompile Include="sound_file_item_property.cpp" />
+    <ClCompile Include="sound_file_struct.cpp" />
+    <ClCompile Include="sound_items_source.cpp" />
+    <ClCompile Include="sound_items_view_panel.cpp" />
+    <ClCompile Include="sound_item_editor_panel.cpp" />
+    <ClCompile Include="sound_item_factory.cpp" />
+    <ClCompile Include="sound_item_struct.cpp" />
+    <ClCompile Include="sound_object_cook.cpp" />
+    <ClCompile Include="sound_options_struct.cpp" />
+    <ClCompile Include="terrain_control_cursor.cpp" />
+    <ClCompile Include="terrain_core_form.cpp" />
+    <ClCompile Include="terrain_import_form.cpp" />
+    <ClCompile Include="terrain_modifier_bump.cpp" />
+    <ClCompile Include="terrain_modifier_command.cpp" />
+    <ClCompile Include="terrain_modifier_control.cpp" />
+    <ClCompile Include="terrain_modifier_flatten.cpp" />
+    <ClCompile Include="terrain_modifier_painter.cpp" />
+    <ClCompile Include="terrain_modifier_raise_lower.cpp" />
+    <ClCompile Include="terrain_modifier_smooth.cpp" />
+    <ClCompile Include="terrain_object.cpp" />
+    <ClCompile Include="terrain_object_core.cpp" />
+    <ClCompile Include="terrain_object_drawing.cpp" />
+    <ClCompile Include="terrain_object_export.cpp" />
+    <ClCompile Include="terrain_object_helpers.cpp" />
+    <ClCompile Include="terrain_object_import.cpp" />
+    <ClCompile Include="terrain_painter_control_tab.cpp" />
+    <ClCompile Include="terrain_quad.cpp" />
+    <ClCompile Include="terrain_tool_tab.cpp" />
+    <ClCompile Include="texture_document.cpp" />
+    <ClCompile Include="texture_document_options.cpp" />
+    <ClCompile Include="texture_document_preview.cpp" />
+    <ClCompile Include="texture_editor_source.cpp" />
+    <ClCompile Include="texture_options.cpp" />
+    <ClCompile Include="texture_options_cooker.cpp" />
+    <ClCompile Include="texture_tga_to_argb_cook.cpp" />
+    <ClCompile Include="tools_tab.cpp" />
+    <ClCompile Include="tool_base.cpp" />
+    <ClCompile Include="tool_compound.cpp" />
+    <ClCompile Include="tool_light.cpp" />
+    <ClCompile Include="tool_solid_visual.cpp" />
+    <ClCompile Include="tool_terrain.cpp" />
+    <ClCompile Include="tool_window_storage.cpp" />
+    <ClCompile Include="transform_control_base.cpp" />
+    <ClCompile Include="transform_control_rotation.cpp" />
+    <ClCompile Include="transform_control_scaling.cpp" />
+    <ClCompile Include="transform_control_translation.cpp" />
+    <ClCompile Include="window_ide.cpp" />
+    <ClCompile Include="window_ide_hook.cpp" />
+    <ClCompile Include="window_ide_serialize.cpp" />
+    <ClCompile Include="window_tab.cpp" />
+    <ClCompile Include="window_tree_values.cpp" />
+    <ClCompile Include="window_view.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\api.h" />
+    <ClInclude Include="..\engine.h" />
+    <ClInclude Include="..\library_linkage.h" />
+    <ClInclude Include="..\property_holder.h" />
+    <ClInclude Include="..\world.h" />
+    <ClInclude Include="about_dialog.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="action.h" />
+    <ClInclude Include="actions.h" />
+    <ClInclude Include="action_continuous.h" />
+    <ClInclude Include="action_engine.h" />
+    <ClInclude Include="action_single.h" />
+    <ClInclude Include="add_delete_group_nodes.h" />
+    <ClInclude Include="add_delete_node.h" />
+    <ClInclude Include="attribute.h" />
+    <ClInclude Include="bool_holder.h" />
+    <ClInclude Include="change_node_index.h" />
+    <ClInclude Include="collision_object.h" />
+    <ClInclude Include="collision_object_control.h" />
+    <ClInclude Include="collision_object_dynamic.h" />
+    <ClInclude Include="color_curve_editor.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="color_holder.h" />
+    <ClInclude Include="command_add_library_object.h" />
+    <ClInclude Include="command_apply_control_transform.h" />
+    <ClInclude Include="command_create_remove_link.h" />
+    <ClInclude Include="command_delete_object.h" />
+    <ClInclude Include="command_drop_objects.h" />
+    <ClInclude Include="command_paste_objects.h" />
+    <ClInclude Include="command_place_objects.h" />
+    <ClInclude Include="command_select.h" />
+    <ClInclude Include="command_set_object_transform.h" />
+    <ClInclude Include="command_snap_base.h" />
+    <ClInclude Include="command_snap_objects.h" />
+    <ClInclude Include="compound_object_tab.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="compound_tool_tab.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="control_properties_tab.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="dependency_editor.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="dependency_editor_bool_bool.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="dependency_editor_bool_float.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="dependency_editor_float_bool.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="dependency_editor_float_float.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="dependency_editor_type.h" />
+    <ClInclude Include="disable_group_nodes.h" />
+    <ClInclude Include="editor_control_base.h" />
+    <ClInclude Include="editor_ide.h" />
+    <ClInclude Include="editor_memory.h" />
+    <ClInclude Include="editor_resource_manager.h" />
+    <ClInclude Include="editor_world.h" />
+    <ClInclude Include="editor_world_defines.h" />
+    <ClInclude Include="editor_world_inline.h" />
+    <ClInclude Include="float_curve.h" />
+    <ClInclude Include="float_curve_editor.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="float_holder.h" />
+    <ClInclude Include="flying_camera.h" />
+    <ClInclude Include="graph_view.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="gui_binder.h" />
+    <ClInclude Include="inplace_combo_box.h">
+      <DeploymentContent>true</DeploymentContent>
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="input_action.h" />
+    <ClInclude Include="input_actions.h" />
+    <ClInclude Include="input_action_single.h" />
+    <ClInclude Include="input_engine.h" />
+    <ClInclude Include="input_keys_holder.h" />
+    <ClInclude Include="integer_holder.h" />
+    <ClInclude Include="level_editor.h" />
+    <ClInclude Include="library_object_tab.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="light_tool_tab.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="loading_dialog.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="lua_config_value_editor.h" />
+    <ClInclude Include="move_node.h" />
+    <ClInclude Include="object_base.h" />
+    <ClInclude Include="object_compound.h" />
+    <ClInclude Include="object_inspector_tab.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="object_light.h" />
+    <ClInclude Include="object_solid_visual.h" />
+    <ClInclude Include="options_dialog.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="options_page.h" />
+    <ClInclude Include="options_page_general.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="options_page_input.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="particle_data_sources_holder.h" />
+    <ClInclude Include="particle_data_sources_panel.h" />
+    <ClInclude Include="particle_data_source_nodes.h" />
+    <ClInclude Include="particle_editor.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="particle_graph_document.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="particle_graph_node.h" />
+    <ClInclude Include="particle_graph_node_action.h" />
+    <ClInclude Include="particle_graph_node_collection.h" />
+    <ClInclude Include="particle_graph_node_emitter.h" />
+    <ClInclude Include="particle_graph_node_event.h" />
+    <ClInclude Include="particle_graph_node_property.h" />
+    <ClInclude Include="particle_graph_node_style.h" />
+    <ClInclude Include="particle_groups_source.h" />
+    <ClInclude Include="particle_hypergraph.h" />
+    <ClInclude Include="particle_links_manager.h" />
+    <ClInclude Include="particle_node_connection_editor.h" />
+    <ClInclude Include="particle_node_properties.h" />
+    <ClInclude Include="particle_node_property_holders.h" />
+    <ClInclude Include="particle_scalable_control.h" />
+    <ClInclude Include="particle_sources_panel.h" />
+    <ClInclude Include="particle_source_nodes_container.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="particle_time_based_layout_panel.h" />
+    <ClInclude Include="particle_time_based_layout_props.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="picker.h" />
+    <ClInclude Include="project.h" />
+    <ClInclude Include="project_browser_dialog.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="project_defines.h" />
+    <ClInclude Include="project_items.h" />
+    <ClInclude Include="project_tab.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="property_boolean.h" />
+    <ClInclude Include="property_boolean_reference.h" />
+    <ClInclude Include="property_boolean_values_value.h" />
+    <ClInclude Include="property_boolean_values_value_reference.h" />
+    <ClInclude Include="property_collection.h" />
+    <ClInclude Include="property_collection_base.h" />
+    <ClInclude Include="property_collection_converter.h" />
+    <ClInclude Include="property_collection_editor.h" />
+    <ClInclude Include="property_collection_enumerator.h" />
+    <ClInclude Include="property_collection_getter.h" />
+    <ClInclude Include="property_color.h" />
+    <ClInclude Include="property_color_base.h" />
+    <ClInclude Include="property_color_reference.h" />
+    <ClInclude Include="property_connection_editor.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="property_container.h" />
+    <ClInclude Include="property_container_converter.h" />
+    <ClInclude Include="property_container_holder.h" />
+    <ClInclude Include="property_converter_boolean_values.h" />
+    <ClInclude Include="property_converter_color.h" />
+    <ClInclude Include="property_converter_float.h" />
+    <ClInclude Include="property_converter_float_enum.h" />
+    <ClInclude Include="property_converter_integer_enum.h" />
+    <ClInclude Include="property_converter_integer_values.h" />
+    <ClInclude Include="property_converter_string_values.h" />
+    <ClInclude Include="property_converter_tree_values.h" />
+    <ClInclude Include="property_converter_vec3f.h" />
+    <ClInclude Include="property_editor_color.h" />
+    <ClInclude Include="property_editor_file_name.h" />
+    <ClInclude Include="property_editor_tree_values.h" />
+    <ClInclude Include="property_file_name_value.h" />
+    <ClInclude Include="property_file_name_value_base.h" />
+    <ClInclude Include="property_file_name_value_shared_str.h" />
+    <ClInclude Include="property_float.h" />
+    <ClInclude Include="property_float_enum_value.h" />
+    <ClInclude Include="property_float_enum_value_reference.h" />
+    <ClInclude Include="property_float_limited.h" />
+    <ClInclude Include="property_float_limited_reference.h" />
+    <ClInclude Include="property_float_reference.h" />
+    <ClInclude Include="property_holder.h" />
+    <ClInclude Include="property_holder_include.h" />
+    <ClInclude Include="property_integer.h" />
+    <ClInclude Include="property_integer_enum_value.h" />
+    <ClInclude Include="property_integer_enum_value_reference.h" />
+    <ClInclude Include="property_integer_limited.h" />
+    <ClInclude Include="property_integer_limited_reference.h" />
+    <ClInclude Include="property_integer_reference.h" />
+    <ClInclude Include="property_integer_values_value.h" />
+    <ClInclude Include="property_integer_values_value_base.h" />
+    <ClInclude Include="property_integer_values_value_getter.h" />
+    <ClInclude Include="property_integer_values_value_reference.h" />
+    <ClInclude Include="property_integer_values_value_reference_getter.h" />
+    <ClInclude Include="property_property_container.h" />
+    <ClInclude Include="property_string.h" />
+    <ClInclude Include="property_string_shared_str.h" />
+    <ClInclude Include="property_string_values_value.h" />
+    <ClInclude Include="property_string_values_value_base.h" />
+    <ClInclude Include="property_string_values_value_getter.h" />
+    <ClInclude Include="property_string_values_value_shared_str.h" />
+    <ClInclude Include="property_string_values_value_shared_str_getter.h" />
+    <ClInclude Include="property_vec3f.h" />
+    <ClInclude Include="property_vec3f_base.h" />
+    <ClInclude Include="property_vec3f_reference.h" />
+    <ClInclude Include="raw_file_property_struct.h" />
+    <ClInclude Include="resources.h" />
+    <ClInclude Include="resource_document_factory.h" />
+    <ClInclude Include="resource_editor.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="resource_editors_factory.h" />
+    <ClInclude Include="resource_editor_base.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="resource_editor_cancel.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="resource_editor_commit.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="resource_editor_options_wrapper.h" />
+    <ClInclude Include="resource_options.h" />
+    <ClInclude Include="resource_selector.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="scene_graph_node.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="scene_graph_node_style.h" />
+    <ClInclude Include="scene_graph_tab.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="solid_visual_tool_tab.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="sound_editor.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="sound_files_source.h" />
+    <ClInclude Include="sound_files_view_panel.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="sound_file_item.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="sound_file_item_dependency.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="sound_file_item_property.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="sound_file_selection_event_args.h" />
+    <ClInclude Include="sound_file_struct.h" />
+    <ClInclude Include="sound_items_source.h" />
+    <ClInclude Include="sound_items_view_panel.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="sound_item_editor_panel.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="sound_item_factory.h" />
+    <ClInclude Include="sound_item_selection_event_args.h" />
+    <ClInclude Include="sound_item_struct.h" />
+    <ClInclude Include="sound_object_cook.h" />
+    <ClInclude Include="sound_options_struct.h" />
+    <ClInclude Include="string_holder.h" />
+    <ClInclude Include="terrain_control_cursor.h" />
+    <ClInclude Include="terrain_core_form.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="terrain_import_form.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="terrain_modifier_bump.h" />
+    <ClInclude Include="terrain_modifier_command.h" />
+    <ClInclude Include="terrain_modifier_control.h" />
+    <ClInclude Include="terrain_modifier_flatten.h" />
+    <ClInclude Include="terrain_modifier_painter.h" />
+    <ClInclude Include="terrain_modifier_raise_lower.h" />
+    <ClInclude Include="terrain_modifier_smooth.h" />
+    <ClInclude Include="terrain_object.h" />
+    <ClInclude Include="terrain_object_inline.h" />
+    <ClInclude Include="terrain_painter_control_tab.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="terrain_quad.h" />
+    <ClInclude Include="terrain_tool_tab.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="texture_document.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="texture_document_factory.h" />
+    <ClInclude Include="texture_editor_source.h" />
+    <ClInclude Include="texture_options.h" />
+    <ClInclude Include="texture_options_cooker.h" />
+    <ClInclude Include="texture_tga_to_argb_cook.h" />
+    <ClInclude Include="tools_tab.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="tool_base.h" />
+    <ClInclude Include="tool_compound.h" />
+    <ClInclude Include="tool_light.h" />
+    <ClInclude Include="tool_solid_visual.h" />
+    <ClInclude Include="tool_tab.h" />
+    <ClInclude Include="tool_terrain.h" />
+    <ClInclude Include="tool_window_storage.h" />
+    <ClInclude Include="transform_control_base.h" />
+    <ClInclude Include="transform_control_rotation.h" />
+    <ClInclude Include="transform_control_scaling.h" />
+    <ClInclude Include="transform_control_translation.h" />
+    <ClInclude Include="window_ide.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="window_tab.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="window_tree_values.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="window_view.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resources.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cursors\transform_general.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="about_dialog.resx">
+      <DependentUpon>about_dialog.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="color_curve_editor.resx">
+      <DependentUpon>color_curve_editor.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="compound_object_tab.resx">
+      <DependentUpon>compound_object_tab.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="compound_tool_tab.resx">
+      <DependentUpon>compound_tool_tab.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="control_properties_tab.resx">
+      <DependentUpon>control_properties_tab.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dependency_editor_bool_bool.resx">
+      <DependentUpon>dependency_editor_bool_bool.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dependency_editor_bool_float.resx">
+      <DependentUpon>dependency_editor_bool_float.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dependency_editor_float_bool.resx">
+      <DependentUpon>dependency_editor_float_bool.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="float_curve_editor.resx">
+      <DependentUpon>float_curve_editor.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="graph_view.resx">
+      <DependentUpon>graph_view.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inplace_combo_box.resx">
+      <DependentUpon>inplace_combo_box.h</DependentUpon>
+      <DeploymentContent>true</DeploymentContent>
+    </EmbeddedResource>
+    <EmbeddedResource Include="library_object_tab.resx">
+      <DependentUpon>library_object_tab.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="light_tool_tab.resx">
+      <DependentUpon>light_tool_tab.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loading_dialog.resx">
+      <DependentUpon>loading_dialog.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="object_inspector_tab.resx">
+      <DependentUpon>object_inspector_tab.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="options_dialog.resx">
+      <DependentUpon>options_dialog.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="options_page_general.resx">
+      <DependentUpon>options_page_general.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="options_page_input.resx">
+      <DependentUpon>options_page_input.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="particle_editor.resx">
+      <DependentUpon>particle_editor.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="project_browser_dialog.resx">
+      <DependentUpon>project_browser_dialog.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="project_tab.resx">
+      <DependentUpon>project_tab.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="property_connection_editor.resx">
+      <DependentUpon>property_connection_editor.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource_editor.resx">
+      <DependentUpon>resource_editor.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource_editor_cancel.resx">
+      <DependentUpon>resource_editor_cancel.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource_editor_commit.resx">
+      <DependentUpon>resource_editor_commit.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource_selector.resx">
+      <DependentUpon>resource_selector.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scene_graph_tab.resx">
+      <DependentUpon>scene_graph_tab.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solid_visual_tool_tab.resx">
+      <DependentUpon>solid_visual_tool_tab.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sound_editor.resx">
+      <DependentUpon>sound_editor.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sound_files_view_panel.resx">
+      <DependentUpon>sound_files_view_panel.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sound_file_item.resx">
+      <DependentUpon>sound_file_item.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sound_file_item_dependency.resx">
+      <DependentUpon>sound_file_item_dependency.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sound_file_item_property.resx">
+      <DependentUpon>sound_file_item_property.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sound_items_view_panel.resx">
+      <DependentUpon>sound_items_view_panel.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sound_item_editor_panel.resx">
+      <DependentUpon>sound_item_editor_panel.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="terrain_core_form.resx">
+      <DependentUpon>terrain_core_form.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="terrain_import_form.resx">
+      <DependentUpon>terrain_import_form.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="terrain_painter_control_tab.resx">
+      <DependentUpon>terrain_painter_control_tab.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="terrain_tool_tab.resx">
+      <DependentUpon>terrain_tool_tab.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="texture_document.resx">
+      <DependentUpon>texture_document.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tools_tab.resx">
+      <DependentUpon>tools_tab.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="window_ide.resx">
+      <DependentUpon>window_ide.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="window_tab.resx">
+      <DependentUpon>window_tab.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="window_tree_values.resx">
+      <DependentUpon>window_tree_values.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="window_view.resx">
+      <DependentUpon>window_view.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
